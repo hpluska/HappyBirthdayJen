@@ -14,7 +14,7 @@ class letter{
         this.l.style.backgroundColor = color;
         this.l.style.fontSize = "2.5em";
         this.l.style.textAlign = "center";
-        this.l.style.fontFamily = "cursive";
+        this.l.style.fontFamily = "Comic Sans MS";
         this.l.style.borderRadius = r + "%";
         this.l.style.paddingTop = "2%";
         this.l.style.paddingBottom = "0%";
