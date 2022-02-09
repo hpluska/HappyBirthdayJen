@@ -12,7 +12,7 @@ class letter{
         this.l.style.height = dim + "em";
         this.l.style.border = "thin gold solid";
         this.l.style.backgroundColor = color;
-        this.l.style.fontSize = "2.5em";
+        this.l.style.fontSize = "3em";
         this.l.style.textAlign = "center";
         this.l.style.fontFamily = "Comic Sans MS";
         this.l.style.borderRadius = r + "%";
