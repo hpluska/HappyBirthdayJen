@@ -1,5 +1,5 @@
 class letter{
-    constructor(x, y, lt, color, r){
+    constructor(x, y, lt, color, r, dim){
         this.x = x;
         this.startX = x;
         this.y = y;
@@ -8,17 +8,19 @@ class letter{
         this.l.style.position = "absolute";
         this.l.style.left = this.x + "%";
         this.l.style.top = this.y + "%";
-        this.l.style.width = "1.5em";
-        this.l.style.height = "1.5em";
+        this.l.style.width = dim + "em";
+        this.l.style.height = dim + "em";
         this.l.style.border = "thin gold solid";
         this.l.style.backgroundColor = color;
         this.l.style.fontSize = "2.5em";
         this.l.style.textAlign = "center";
         this.l.style.fontFamily = "cursive";
         this.l.style.borderRadius = r + "%";
+        this.l.style.paddingTop = "2%";
+        this.l.style.paddingBottom = "0%";
         this.l.innerHTML = lt;
-        this.xDelta = Math.random()/2;
-        this.yDelta = Math.random()/2;
+        this.xDelta = Math.random()/4;
+        this.yDelta = Math.random()/4;
         document.body.append(this.l);
         
     }
