@@ -14,13 +14,15 @@ class letter{
         this.l.style.backgroundColor = color;
         this.l.style.fontSize = "3em";
         this.l.style.textAlign = "center";
-        this.l.style.fontFamily = "Comic Sans MS";
+        this.l.style.fontStyle = "bold";
+        this.l.style.fontFamily = "Verdana, Arial, sans-serif";
         this.l.style.borderRadius = r + "%";
-        this.l.style.paddingTop = "2%";
-        this.l.style.paddingBottom = "0%";
+        this.l.style.paddingTop = ".5em";
         this.l.innerHTML = lt;
-        this.xDelta = Math.random()/4;
-        this.yDelta = Math.random()/4;
+        this.position = 0;
+        this.rDelta = Math.random()/4 - .12;
+        this.xDelta = Math.random()/5;
+        this.yDelta = Math.random()/5;
         document.body.append(this.l);
         
     }
@@ -39,5 +41,7 @@ class letter{
         this.y += this.yDelta;
         this.l.style.left = this.x + "%";
         this.l.style.top = this.y + "%";
+        this.position += this.rDelta;
+        this.l.style.transform = "rotate("+ this.position+"deg)";
     }
 }

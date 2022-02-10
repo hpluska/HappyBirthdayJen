@@ -20,7 +20,7 @@ var L13 = new letter(dim*7 + spacing*7.5, yPos*5.5, "Y", "green", 0, 2.5);
 var L14 = new letter(dim*5 + spacing*1, yPos*10, "j", "red", 50, 2.5);
 var L15 = new letter(dim*6 + spacing*2, yPos*10, "E", "lime", 0, 2.5);
 var L16 = new letter(dim*7 + spacing*3, yPos*10, "n", "purple", 25, 2.5);
-var L16 = new letter(dim*8 + spacing*4, yPos*10, "!!!", "aqua", 25, 2.5);
+var L17 = new letter(dim*8 + spacing*4, yPos*10, "!!!", "aqua", 25, 2.5);
 
 function moveLetters(){
     L1.moveLetter();
@@ -39,5 +39,6 @@ function moveLetters(){
     L14.moveLetter();
     L15.moveLetter();
     L16.moveLetter();
+    L17.moveLetter();
     window.requestAnimationFrame(moveLetters);
 }
